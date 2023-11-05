@@ -12,7 +12,7 @@ module "data_factory" {
   # By default, this module will create a resource group and 
   # provide a name for an existing resource group. If you wish 
   # to use an existing resource group, change the option 
-  # to "create_key_vault_resource_group = false." The location of the group 
+  # to "create_data_factory_resource_group = false." The location of the group 
   # will remain the same if you use the current resource.
   existing_resource_group_name = azurerm_resource_group.datafactory_rg.name
   location                     = module.mod_azure_region_lookup.location_cli
