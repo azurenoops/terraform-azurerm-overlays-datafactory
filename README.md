@@ -89,7 +89,7 @@ By default, this module will create a resource group and the name of the resourc
 
 ### Azure Runtime
 
-This module can be used with the [Azure Data Factory Integration Runtime Azure](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_azure). To use this feature, you must specify the `azure_integration_runtime` variable. The `azure_integration_runtime` variable is a map object that defines any Azure Integration Runtime nodes that are required. The key of each object is the name of a new node. Configuration parameters within the object allow customization.
+This module can be used with the [Azure Data Factory Integration Runtime Azure](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_azure). To use this feature, you must specify the `azure_integration_runtime` variable. The `azure_integration_runtime` variable is a map object that defines any Azure Integration Runtime nodes that are required. The key of each object is the name of a new node.
 
 ```hcl
 
@@ -119,7 +119,7 @@ azure_integration_runtime = {
 
 ### Self Hosted Runtime
 
-This module can be used with the [Azure Data Factory Integration Runtime Self Hosted](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_self_hosted). To use this feature, you must specify the `selfhosted_integration_runtime` variable. The `selfhosted_integration_runtime` variable is a map object that defines any Self Hosted Integration Runtime nodes that are required. The key of each object is the name of a new node. Configuration parameters within the object allow customization.
+This module can be used with the [Azure Data Factory Integration Runtime Self Hosted](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_self_hosted). To use this feature, you must specify the `selfhosted_integration_runtime` variable. The `selfhosted_integration_runtime` variable is a map object that defines any Self Hosted Integration Runtime nodes that are required. The key of each object is the name of a new node.
 
 ```hcl
 
@@ -147,9 +147,9 @@ selfhosted_integration_runtime = {
 
 ### Azure SSIS Runtime
 
-This module can be used with the [Azure Data Factory Integration Runtime Azure SSIS](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_azure_ssis). To use this feature, you must specify the `azure_ssis_integration_runtime` variable. The `azure_ssis_integration_runtime` variable is a map object that defines any Azure SSIS Integration Runtime nodes that are required. The key of each object is the name of a new node. Configuration parameters within the object allow customization.
+This module can be used with the [Azure Data Factory Integration Runtime Azure SSIS](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_factory_integration_runtime_azure_ssis). To use this feature, you must specify the `azure_ssis_integration_runtime` variable. The `azure_ssis_integration_runtime` variable is a map object that defines any Azure SSIS Integration Runtime nodes that are required. The key of each object is the name of a new node.
 
-```hcl
+```terraform
 
 # Azurerm Provider configuration
 provider "azurerm" {
