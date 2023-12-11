@@ -26,7 +26,7 @@ module "data_factory" {
   selfhosted_integration_runtime = {}
 
   # This is the private endpoint configuration for the Self Hosted Integration Runtime
-  # This private endpoint will create a privste dns zone and a private dns record since
+  # This private endpoint will create a private dns zone and a private dns record since
   # the private dns zone is not already created.
   enable_private_endpoint = true
   existing_virtual_network_name = azurerm_virtual_network.datafactory_vnet.name
