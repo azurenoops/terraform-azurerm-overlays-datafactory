@@ -6,7 +6,6 @@ terraform.tfvars
 # Compiled files
 *.tfstate
 *.tfstate.backup
-*.tfvars
 
 **/.terraform.lock.hcl
 
@@ -81,3 +80,5 @@ test/go.sum
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
+*.log
+*.tfplan

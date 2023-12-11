@@ -5,5 +5,5 @@ locals {
 
   resource_group_name = element(coalescelist(data.azurerm_resource_group.rgrp.*.name, module.mod_scaffold_rg.*.resource_group_name, [""]), 0)
   location            = element(coalescelist(data.azurerm_resource_group.rgrp.*.location, module.mod_scaffold_rg.*.resource_group_location, [""]), 0)
-  example_custom_name = coalesce(var.example_custom_name, data.azurenoopsutils_resource_name.example_custom_name.result)
+  data_factory_name = coalesce(var.custom_data_factory_name, lower(data.azurenoopsutils_resource_name.data_factory_name.result))
 }

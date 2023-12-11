@@ -24,7 +24,20 @@ variable "use_naming" {
 
 # Custom naming override
 variable "custom_resource_group_name" {
-  description = "The name of the custom resource group to create. If not set, the name will be generated using the `org_name`, `workload_name`, `deploy_environment` and `environment` variables."
+  description = "Custom name of the resource group, generated if not set."
+  type        = string
+  default     = null  
+}
+
+
+variable "custom_data_factory_name" {
+  description = "Custom name of the Data Factory, generated if not set."
+  type        = string
+  default     = null
+}
+
+variable "integration_runtime_custom_name" {
+  description = "Name of the integration_runtime resource"
   type        = string
   default     = null
 }

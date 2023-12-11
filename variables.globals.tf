@@ -35,8 +35,8 @@ variable "org_name" {
 # RG Configuration   ##
 #######################
 
-variable "create_resource_group" {
-  description = "Controls if the resource group should be created. If set to false, the resource group name must be provided. Default is false."
+variable "create_data_factory_resource_group" {
+  description = "Create a resource group for the data factory. If set to false, the existing_resource_group_name variable must be set. Default is false."
   type        = bool
   default     = false
 }
@@ -67,23 +67,12 @@ variable "existing_private_dns_zone" {
   default     = null
 }
 
-variable "private_subnet_address_prefix" {
-  description = "The name of the subnet for private endpoints"
-  default     = null
-}
-
-variable "create_private_endpoint_subnet" {
-  description = "Controls if the subnet should be created. If set to false, the subnet name must be provided. Default is false."
-  type        = bool
-  default     = false
-}
-
 variable "existing_private_subnet_name" {
   description = "Name of the existing subnet for the private endpoint"
   default     = null
 }
 
-variable "virtual_network_name" {
+variable "existing_virtual_network_name" {
   description = "Name of the virtual network for the private endpoint"
   default     = null
 }
